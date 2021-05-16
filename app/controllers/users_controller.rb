@@ -1,3 +1,5 @@
+require './config/environment'
+
 class UsersController < ApplicationController
 
   get "/signup" do
@@ -6,8 +8,13 @@ class UsersController < ApplicationController
 
   post "/signup" do
     user = User.create(params)
-    session[:user_id] = user.id
-    redirect "/"
+    if user.id
+      session[:user_id] = user.id
+      redirect "/"
+    else
+      flash[:alert] = "Username is taken, please try again."
+      redirect "/signup"
+    end
   end
 
   

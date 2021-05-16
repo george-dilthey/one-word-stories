@@ -27,6 +27,10 @@ purple: 72147e
     line-height: 18px;
   }
 
+  .alert {
+    background-color: #f21170;
+  }
+
   .nav{
     padding-left: 2.25%;
   }

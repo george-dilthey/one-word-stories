@@ -32,12 +32,20 @@
           </li>
         <%else%>
           <li class="nav-item">
+            <a class="nav-link" href="/login">Log in</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/signup">Sign Up</a>
           </li>
         <%end%>
       </ul>
     </nav>  
     <div class="wrapper">
+        <% flash.keys.each do |type| %>
+          <div data-alert class="flash <%= type %> alert-box radius">
+            <%= flash[type] %>
+          </div>
+        <% end %>
 
         <%= yield %>
 
