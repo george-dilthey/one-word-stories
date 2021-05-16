@@ -2,8 +2,9 @@
 <div class="jumbotron jumbotron-fluid.bg-">
   <h1 class="display-4">Welcome to One Word Stories</h1>
   <p class="lead">A website to create stories, <strong>one word at a time.</strong></p>
-
-    <a class="btn btn-primary btn-lg" href="/signup" role="button">Sign Up</a>
+    <%if !logged_in?%>
+      <a class="btn btn-primary btn-lg" href="/signup" role="button">Sign Up</a>
+    <%end%>
     <a class="btn btn-primary btn-lg" href="/signup" role="button">View Stories</a>
   </p>
 </div>
