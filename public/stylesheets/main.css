@@ -1,4 +1,11 @@
 
+/*
+dark orange: ff5200
+light orange: fa9905
+pink: f21170
+purple: 72147e
+*/
+
 @media screen {
   /* --- Reset Styles --- */
   * {
@@ -20,18 +27,44 @@
     line-height: 18px;
   }
 
+  .nav{
+    padding-left: 2.25%;
+    margin-left: 10px;
+  }
+
+  .nav-link {
+    color: black;
+  }
+
+  .nav-link:hover {
+    color: #787878	;
+  }
+
   .wrapper {
     background: #fff;
-    margin: 10px auto;
+    margin: 10px auto 10px 10px ;
     max-width: 960px;
     padding: 2.25%; /* 18px / 800px */
-    width: 100%;
+    width: 75%;
   }
 
   .jumbotron {
     background-color: #fff;
-
   }
+
+  .btn-primary {
+    background-color: white;
+    color: #ff5200;
+    border-color: #ff5200;
+    margin-right: 20px;
+  }
+
+  .btn-primary:hover {
+    background-color: #ff5200;
+    color: white;
+    border-color: #ff5200;
+    }
+  
 
   h1 {
     font-size: 36px;
