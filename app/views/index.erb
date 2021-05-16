@@ -8,3 +8,21 @@
     <a class="btn btn-primary btn-lg" href="/" role="button">View Stories</a>
   </p>
 </div>
+
+<div class="container">
+  <div class="row">
+    <%@stories.each_with_index do |s, i|%>
+      <%if i<3%>
+        <div class="col">
+          <div class="card">
+            <h2><%=s.title%></h2>
+            <p><%=preview_text(s)%></p>
+          </div>
+        </div>
+      <%else%>
+        <%break%>
+      <%end%>
+    <%end%>
+    
+  </div>
+</div>

@@ -74,10 +74,7 @@ purple: 72147e
   }
 
   h2 {
-    border-bottom: 2px solid #ccc;
     font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 16px;
   }
 
   h3 {
@@ -86,7 +83,6 @@ purple: 72147e
   }
 
   p {
-    margin-bottom: 18px;
   }
 
   .main {

@@ -11,7 +11,8 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    erb :welcome
+    @stories = Story.all
+    erb :index
   end
 
   helpers do
@@ -22,6 +23,11 @@ class ApplicationController < Sinatra::Base
 
     def current_user
       logged_in? && User.find(session[:user_id])
+    end
+
+    def preview_text(story)
+      text = story.text
+      preview_text = text.truncate_words(20)
     end
 
   end
