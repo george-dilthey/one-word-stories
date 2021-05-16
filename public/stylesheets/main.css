@@ -29,7 +29,6 @@ purple: 72147e
 
   .nav{
     padding-left: 2.25%;
-    margin-left: 10px;
   }
 
   .nav-link {
@@ -42,14 +41,13 @@ purple: 72147e
 
   .wrapper {
     background: #fff;
-    margin: 10px auto 10px 10px ;
-    max-width: 960px;
+    margin: 10px 30px ;
     padding: 2.25%; /* 18px / 800px */
-    width: 75%;
   }
 
   .jumbotron {
     background-color: #fff;
+    padding: 0;
   }
 
   .btn-primary {
