@@ -73,6 +73,10 @@ purple: 72147e
     width: 100%;
   }
 
+  .login-signup .btn-primary{
+    width: 50%;
+  }
+
   button.delete {
     background-color: #ff5200;
     color: white;

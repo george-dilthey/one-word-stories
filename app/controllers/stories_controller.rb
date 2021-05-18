@@ -7,6 +7,15 @@ class StoriesController < ApplicationController
     erb :"/stories/index.html"
   end
 
+  get "/stories/new" do
+    erb :"/stories/new.html"
+  end
+
+  post "/stories" do
+    story = Story.create(params)
+    redirect "/stories/#{story.id}"
+  end
+
   get "/stories/:id" do
     @story = Story.find_by_id(params[:id])
     @author = User.find_by_id(@story.author_id)
