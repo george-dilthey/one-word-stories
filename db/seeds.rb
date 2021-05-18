@@ -1,31 +1,37 @@
 require './config/environment'
 
+User.create(:username=>"mgoose",:password=>"mothergoose",:first_name=>"Mother",:last_name=>"Goose")
 
 stories = [
     {
         :title => "Hansel and Gretel",
         :text => "Hard by a great forest dwelt a poor wood-cutter with his wife and his two children. The boy was called Hansel and the girl Gretel. He had little to bite and to break, and once when great dearth fell on the land, he could no longer procure even daily bread. Now when he thought over this by night in his bed, and tossed about in his anxiety, he groaned and said to his wife: ‘What is to become of us? How are we to feed our poor children, when we no longer have anything even for ourselves?’ ‘I’ll tell you what, husband,’ answered the woman, ‘early tomorrow morning we will take the children out into the forest to where it is the thickest; there we will light a",
-        :completed => false
+        :completed => false,
+        :author_id => 1
     },
     {
         :title => "The Fox and the Cat",
         :text => "It happened that the cat met the fox in a forest, and as she thought to herself: ‘He is clever and full of experience, and much esteemed in the world,’ she spoke to him in a friendly way. ‘Good day, dear Mr Fox, how are you? How is all with you? How are you getting on in these hard times?’ The fox, full of all kinds of arrogance, looked at the cat from head to foot, and for a long time did not know whether he would give any answer or not. At last he said: ‘Oh, you wretched beard-cleaner, you piebald fool, you hungry mouse-hunter, what can you be thinking of? Have you the cheek to ask how I am getting on? What have you learnt? How many arts do you understand?’ ‘I understand but one,’ replied the cat, modestly. ‘What art is that?’ asked the fox. ‘When the hounds are following me, I can spring into a tree and save myself.’ ‘Is that all?’ said the fox. ‘I am master of a hundred arts, and have into the bargain a sackful of cunning. You make me sorry for you; come with me, I will teach you how people get away from the hounds.’ Just then came a hunter with four dogs. The cat sprang nimbly up a tree, and sat down at the top of it, where the branches and foliage quite concealed her. ‘Open your sack, Mr Fox, open your sack,’ cried the cat to him, but the dogs had already seized him, and were holding him fast. ‘Ah, Mr Fox,’ cried the cat. ‘You with your hundred arts are left in the lurch! Had you been able to climb like me, you would not have lost your life.’",
-        :completed => true
+        :completed => true,
+        :author_id => 1
     },
     {
         :title => "The Juniper Tree",
         :text => "Long, long ago, some two thousand years or so, there lived a rich man with a good and beautiful wife. They loved each other dearly, but sorrowed much that they had no",
-        :completed => false
+        :completed => false,
+        :author_id => 1
     },
     {
         :title => "Rumpelstiltskin",
         :text => "By the side of a wood, in a country a long way off, ran a fine stream of water; and upon the stream there stood a mill. The miller’s house was close by, and the miller, you must know, had a very beautiful daughter. She was, moreover, very shrewd and clever; and the miller was so proud of her, that he one day told the king of the land, who used to come and hunt in the wood, that his daughter could spin gold out of straw. Now this king was very fond of",
-        :completed => false
+        :completed => false,
+        :author_id => 1
     },
     {
         :title => "Little Red Riding Hood",
         :text => "Once upon a time there was a dear little girl who was loved by everyone who looked at her, but most of all by her grandmother, and there was nothing that she would not have given to the child. Once she gave her a little cap of red velvet, which suited her so well that she would never wear anything else; so she was always called",
-        :completed => false
+        :completed => false,
+        :author_id => 1
     },
 
     {
@@ -39,7 +45,8 @@ stories = [
         This advice pleased the lion, so he laid himself down quietly for the fox to make him fast to the horse. But the fox managed to tie his legs together and bound all so hard and fast that with all his strength he could not set himself free. When the work was done, the fox clapped the horse on the shoulder, and said, ‘Jip! Dobbin! Jip!’ Then up he sprang, and moved off, dragging the lion behind him. The beast began to roar and bellow, till all the birds of the wood flew away for fright; but the horse let him sing on, and made his way quietly over the fields to his master’s house.
         
         ‘Here he is, master,’ said he, ‘I have got the better of him’: and when the farmer saw his old servant, his heart relented, and he said. ‘Thou shalt stay in thy stable and be well taken care of.’ And so the poor old horse had plenty to eat, and lived—till he died.",
-        :completed => true
+        :completed => true,
+        :author_id => 1
     }
 ]
 
