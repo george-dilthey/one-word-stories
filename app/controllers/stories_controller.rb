@@ -45,6 +45,14 @@ class StoriesController < ApplicationController
     end
   end
 
+  delete "/stories/:id" do
+    story = Story.find_by_id(params[:id])
+    story.destroy
+
+    redirect "/stories"
+    
+  end
+
 
   
 
