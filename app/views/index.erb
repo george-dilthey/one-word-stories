@@ -4,8 +4,12 @@
   <p class="lead">A website to create stories, <strong>one word at a time.</strong></p>
     <%if !logged_in?%>
       <a class="btn btn-primary btn-lg" href="/signup" role="button">Sign Up</a>
+      <a class="btn btn-primary btn-lg" href="/stories" role="button">View Stories</a>
+    <%else%>
+      <a class="btn btn-primary btn-lg" href="/stories/new" role="button">Create Story</a>
+      <a class="btn btn-primary btn-lg" href="/stories" role="button">View Stories</a>
     <%end%>
-    <a class="btn btn-primary btn-lg" href="/stories" role="button">View Stories</a>
+    
   </p>
 </div>
 
