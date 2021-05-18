@@ -3,7 +3,7 @@
     <form class="col-lg-6" action="/stories/<%=@story.id%>" method="POST">
         <div class="form-group">
             <label for="word"></label>
-            <input type="text" class="form-control" name="word" id="word" placeholder="Add one word to the story.">
+            <input type="text" class="form-control" name="word" id="word" placeholder="Add one word to the story." pattern="[a-zA-Z]*$" title="Only one word is allowed.">
             
         </div>
 
