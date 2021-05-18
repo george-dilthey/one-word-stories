@@ -68,6 +68,24 @@ purple: 72147e
     color: white;
     border-color: #ff5200;
     }
+
+  .story-actions .btn-primary{
+    width: 100%;
+  }
+
+  button.delete {
+    background-color: #ff5200;
+    color: white;
+    border-color: #ff5200;
+  }
+
+  button.delete:hover {
+    background-color: #f21170;
+    color: white;
+    border-color: #f21170;
+  }
+
+  
   
 
   h1 {

@@ -29,7 +29,7 @@ stories = [
     },
 
     {
-        :title => "The Juniper Tree",
+        :title => "The Fox and the Horse",
         :text => "A farmer had a horse that had been an excellent faithful servant to him: but he was now grown too old to work; so the farmer would give him nothing more to eat, and said, ‘I want you no longer, so take yourself off out of my stable; I shall not take you back again until you are stronger than a lion.’ Then he opened the door and turned him adrift.
 
         The poor horse was very melancholy, and wandered up and down in the wood, seeking some little shelter from the cold wind and rain. Presently a fox met him: ‘What’s the matter, my friend?’ said he, ‘why do you hang down your head and look so lonely and woe-begone?’ ‘Ah!’ replied the horse, ‘justice and avarice never dwell in one house; my master has forgotten all that I have done for him so many years, and because I can no longer work he has turned me adrift, and says unless I become stronger than a lion he will not take me back again; what chance can I have of that? he knows I have none, or he would not talk so.’
