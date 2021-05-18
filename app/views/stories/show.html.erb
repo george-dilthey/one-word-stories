@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="col">
-                <form  action="/stories/delete/<%=@story.id%>" method="POST">
+                <form onsubmit="return confirm('Do you really want to delete this story? This cannot be undone.');" action="/stories/delete/<%=@story.id%>" method="POST">
                     <input type="hidden" name='_method' value='DELETE'>
                     
                     <div class="text-center">
