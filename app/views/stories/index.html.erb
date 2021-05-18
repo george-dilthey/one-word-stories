@@ -1,0 +1,20 @@
+<div>
+    <div>
+        <h1>Stories</h1>
+    </div>
+    <div class="container-flex">
+        <div class="row">
+        <%@stories.each do |s|%>
+            <div class="col-4">
+                <a href="/stories/<%=s.id%>">
+                    <div class="card">
+                        <h2><%=s.title%></h2>
+                        <p><%=preview_text(s)%></p>
+                    </div>
+                </a>    
+            </div>
+        <%end%>
+        
+        </div>
+    </div>
+</div>

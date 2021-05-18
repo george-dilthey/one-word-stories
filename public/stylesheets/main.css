@@ -52,6 +52,7 @@ purple: 72147e
   .jumbotron {
     background-color: #fff;
     padding: 0;
+    margin-bottom: 10rem;
   }
 
   .btn-primary {
@@ -59,6 +60,7 @@ purple: 72147e
     color: #ff5200;
     border-color: #ff5200;
     margin-right: 20px;
+    width: 20%;
   }
 
   .btn-primary:hover {
@@ -75,6 +77,7 @@ purple: 72147e
 
   h2 {
     font-size: 24px;
+    margin-bottom: 1rem;
   }
 
   h3 {
@@ -85,30 +88,21 @@ purple: 72147e
   p {
   }
 
-  .main {
-    overflow: hidden;
+  .card{
+    height: 85%;
+    padding: 1rem;
+    margin: 1rem;
+    color: black; 
   }
 
-  .content {
-    float: left;
-    width: 60%; /* 480px / 800px */
+  a:link{
+    text-decoration: none;
   }
 
-  .sidebar {
-    background: #eee;
-    border: 1px solid #ccc;
-    float: right;
-    padding: 2.08333333333%; /* 5px / 240px */
-    width: 30%; /* 240px / 800px */
+  .card:hover{
+    box-shadow: 1px 8px 10px grey;
   }
 
-  .sidebar ul {
-    font-size: 14px;
-  }
-
-  .branding {
-    clear: both;
-  }
 
   footer.branding {
     border-top: 2px solid #ccc;

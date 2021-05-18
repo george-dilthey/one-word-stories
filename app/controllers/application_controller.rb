@@ -27,7 +27,7 @@ class ApplicationController < Sinatra::Base
 
     def preview_text(story)
       text = story.text
-      preview_text = text.truncate_words(20)
+      preview_text = text.truncate_words(50)
     end
 
   end

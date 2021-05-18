@@ -2,20 +2,18 @@ require './config/environment'
 
 class StoriesController < ApplicationController
 
-  get "/signup" do
-    erb :"/users/new.html"
+  get "/stories" do
+    @stories = Story.all
+    erb :"/stories/index.html"
   end
 
-  post "/signup" do
-    user = User.create(params)
-    if user.id
-      session[:user_id] = user.id
-      redirect "/"
-    else
-      flash[:alert] = "Username is taken, please try again."
-      redirect "/signup"
-    end
+  get "/stories/:id" do
+    @story = Story.find_by_id(params[:id])
+    @author = User.find_by_id(@story.author_id)
+    erb :"/stories/show.html"
   end
+
+  
 
   
 end

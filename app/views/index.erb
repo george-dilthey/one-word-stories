@@ -1,28 +1,36 @@
 
 <div class="jumbotron jumbotron-fluid.bg-">
-  <h1 class="display-4">Welcome to One Word Stories</h1>
+  <h1 class="display-4">One Word Stories</h1>
   <p class="lead">A website to create stories, <strong>one word at a time.</strong></p>
     <%if !logged_in?%>
       <a class="btn btn-primary btn-lg" href="/signup" role="button">Sign Up</a>
     <%end%>
-    <a class="btn btn-primary btn-lg" href="/" role="button">View Stories</a>
+    <a class="btn btn-primary btn-lg" href="/stories" role="button">View Stories</a>
   </p>
 </div>
 
-<div class="container">
-  <div class="row">
-    <%@stories.each_with_index do |s, i|%>
-      <%if i<3%>
-        <div class="col">
-          <div class="card">
-            <h2><%=s.title%></h2>
-            <p><%=preview_text(s)%></p>
+<div>
+  <div>
+    <h1>Featured Stories:</h1>
+  </div>
+
+  <div class="container-flex">
+    <div class="row">
+      <%@stories.each_with_index do |s, i|%>
+        <%if i<3%>
+          <div class="col">
+            <a href="/stories/<%=s.id%>">
+              <div class="card">
+                <h2><%=s.title%></h2>
+                <p><%=preview_text(s)%></p>
+              </div>
+            </a>  
           </div>
-        </div>
-      <%else%>
-        <%break%>
+        <%else%>
+          <%break%>
+        <%end%>
       <%end%>
-    <%end%>
-    
+      
+    </div>
   </div>
 </div>

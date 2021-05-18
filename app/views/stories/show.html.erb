@@ -1,0 +1,24 @@
+
+<div class="d-flex justify-content-center">
+    <form class="col-lg-6" action="/stories/<%=@story.id%>" method="POST">
+        <div class="form-group">
+            <label for="word"></label>
+            <input type="text" class="form-control" name="word" id="word" placeholder="Add one word to the story.">
+            
+        </div>
+
+        <input type="hidden" name="_method" value="patch">
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Add Word</button>
+        </div>
+    </form>
+</div>
+
+
+<div>
+    <h1><%=@story.title%></h1>
+    <%if @author%>
+        <h3>By: <%="#{@author.first_name} #{@author.last_name}"%></h3>
+    <%end%>
+    <p><%=@story.text%></p>
+</div>
