@@ -33,17 +33,34 @@
 <%if logged_in? && @story.author_id == current_user.id%>
 <hr>
 <div class="story-actions">
-    <h2>As the author of this story, complete this story so that it can no longer be edited by other users, edit the content of the story, or delete the story. Do as you wish!</h2>
+    
     <div class="container">
         <div class="row">
             <div class="col">
+                <%if @story.completed%>
+                <form  action="/stories/incomplete/<%=@story.id%>" method="POST">
+                    <input type="hidden" name='_method' value='PATCH'>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Make Incomplete</button>
+                    </div>
+                </form><br>
+                <div class="text-center">
+                    <p>Making this story incomplete will make it editable by other users.</p>
+                </div>
+
+                <%else%>
                 <form  action="/stories/complete/<%=@story.id%>" method="POST">
                     <input type="hidden" name='_method' value='PATCH'>
                     
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary">Complete Story</button>
                     </div>
-                </form>
+                </form><br>
+                <div class="text-center">
+                    <p>Completing this story will make it so other users can no longer edit it.</p>
+                </div>
+                <%end%>
             </div>
             <div class="col">    
                 <div class="text-center">

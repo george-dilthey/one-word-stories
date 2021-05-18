@@ -24,6 +24,20 @@ class StoriesController < ApplicationController
 
   end
 
+  patch "/stories/complete/:id" do
+    story = Story.find_by_id(params[:id])
+    story.update(:completed => true)
+
+    redirect "/stories/#{story.id}"
+  end
+
+  patch "/stories/incomplete/:id" do
+    story = Story.find_by_id(params[:id])
+    story.update(:completed => false)
+
+    redirect "/stories/#{story.id}"
+  end
+
   
 
   
