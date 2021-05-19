@@ -7,48 +7,23 @@ Authors of a story always have the option of completing their story (making it u
 
 # Getting Started
 
-To run this app on your local server, run the code below to clone the repo, install the dependencies, and start your server using shotgun. You'll then be able to access the app at http://localhost:9393/
+To run this app on your local server, run the code below to clone the repo, and install the dependencies.
 
-    $ git clone https://github.com/george-dilthey/just-the-recipe.git
+    $ git clone https://github.com/george-dilthey/one-word-stories.git
     $ bundle install
+
+You'll have to create a .env file and add a session secret using the key of SESSION_SECRET={{YOUR_SECRET}}. 
+
+    $ touch .env
+
+Finally, you can seed the database with a few starter stories, and start your local server using shotgun. This server can typically be accessed at http://localhost:9393/.
+    
+    $ rake db:seed
     $ shotgun
 
 # Usage
 
-## API Access
-
-To use this gem, you'll need to obtain a free APP ID and APP Key from https://www.edamam.com. Once you have these, create a `.env` file and add these lines at the top:
-
-    APP_ID = {YOUR APP ID}
-    APP_KEY = {YOUR APP KEY}
-
-Alternatively, you can call `JustTheRecipe.authorize({YOUR APP ID}, {YOUR APP KEY})` before making any other calls, but this will need to be done every time you re-enter the app.
-
-## Running the app
-
-Run the app by running the bin file `just-the-recipe`.
-    
-    $ bin/just-the-recipe
-
-If you get a permission denied error, run this to give the bin file run permissions:
-
-    $ chmod +x bin/just-the-recipe
-
-Alternatively, you can call the `JustTheRecipe::CLI.new.call` method.
-
-# Supported Websites
-
-Both the search function and the scrape function rely on scraping a website's [recipe schema](https://schema.org/Recipe). Any website that has properly implemented this schema should be scrapable, but these sites have been tested specifically.
-
-
-* https://www.allrecipes.com
-* https://food52.com
-* https://www.seriouseats.com
-* https://www.marthastewart.com
-* https://www.chowhound.com
-* https://getmecooking.com
-* https://blog.bigoven.com
-* https://www.vegrecipesofindia.com
+Using the app is relatively self explanatory. You can login, create stories, and contribute to other user's stories. Have fun!
 
 
 # Contributing
