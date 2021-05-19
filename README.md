@@ -28,4 +28,4 @@ Using the app is relatively self explanatory. You can login, create stories, and
 
 # Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/george-dilthey/just-the-recipe.
+Bug reports and pull requests are welcome on GitHub at https://github.com/george-dilthey/one-word-stories.
